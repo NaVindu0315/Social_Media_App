@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "376550963405",
+    "firebase_url": "https://social-media-app-7611d-default-rtdb.firebaseio.com",
+    "project_id": "social-media-app-7611d",
+    "storage_bucket": "social-media-app-7611d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376550963405:android:61ba21e8bf137744e59184",
+        "android_client_info": {
+          "package_name": "com.navindu.social_media_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUNChNwfeiDYYO-gYIgOwWAvMFoBJ0ZWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
