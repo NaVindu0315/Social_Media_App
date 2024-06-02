@@ -112,7 +112,7 @@ class _tst_wallState extends State<tst_wall> {
               }),
         ],
         title: Text(
-          '   Announcements',
+          '   Wall',
           style: TextStyle(
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
@@ -189,10 +189,10 @@ class _tst_wallState extends State<tst_wall> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Text(
+                      /*   Text(
                         'Post your announcements here',
                         style: TextStyle(fontSize: 16.0),
-                      ),
+                      ),*/
                       Spacer(),
                       Expanded(
                         child: InkWell(
