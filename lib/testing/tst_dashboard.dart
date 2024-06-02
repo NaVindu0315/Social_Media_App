@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_app/testing/tst_wall.dart';
 
 import '../Colors/colors.dart';
 
@@ -36,6 +37,20 @@ class tst_dashboard extends StatelessWidget {
                         fontSize: 30.0,
                       ),
                     ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Spacer(),
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tst_wall()),
+                          );
+                        },
+                        child: Text('Wall')),
+                    Spacer(),
                   ],
                 ),
                 Spacer(),
