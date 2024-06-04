@@ -145,12 +145,12 @@ class _tst_wallState extends State<tst_wall> {
                     final posturl = message['url'];
                     final messageSender = message['sender'];
                     //   final time = message['timestamp'].toString();
-                    final currentUser = loggedinuser.email;
+                    // final currentUser = loggedinuser.email;
 
                     final messageBubble = messagebuble(
                       msender: messageSender,
                       postlink: posturl,
-                      isme: currentUser == messageSender,
+                      // isme: currentUser == messageSender,
                       //time: time,
                     );
 
@@ -295,11 +295,11 @@ class messagebuble extends StatelessWidget {
   messagebuble({
     required this.postlink,
     required this.msender,
-    required this.isme,
+    // required this.isme,
   });
   final String msender;
   final String postlink;
-  final bool isme;
+//  final bool isme;
   //final String time;
 
   @override
@@ -307,8 +307,7 @@ class messagebuble extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(10.0),
       child: Column(
-        crossAxisAlignment:
-            isme ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             msender,
@@ -319,16 +318,11 @@ class messagebuble extends StatelessWidget {
           ),
           Material(
             elevation: 5.0,
-            borderRadius: isme
-                ? BorderRadius.only(
-                    topLeft: Radius.circular(30.0),
-                    bottomLeft: Radius.circular(30.0),
-                    bottomRight: Radius.circular(30.0))
-                : BorderRadius.only(
-                    topRight: Radius.circular(30.0),
-                    bottomLeft: Radius.circular(30.0),
-                    bottomRight: Radius.circular(30.0)),
-            color: isme ? kSenderChatBubbleColor : kReceiverChatBubbleColor,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30.0),
+                bottomLeft: Radius.circular(30.0),
+                bottomRight: Radius.circular(30.0)),
+            color: kReceiverChatBubbleColor,
             child: Container(
               //padding: EdgeInsets.only(left: 20),
               height: 150,
