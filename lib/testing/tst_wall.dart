@@ -144,12 +144,14 @@ class _tst_wallState extends State<tst_wall> {
                   for (var message in messages) {
                     final posturl = message['url'];
                     final messageSender = message['sender'];
+                    final capti = message['cpt'];
                     //   final time = message['timestamp'].toString();
                     // final currentUser = loggedinuser.email;
 
                     final messageBubble = messagebuble(
                       msender: messageSender,
                       postlink: posturl,
+                      cptt: capti,
                       // isme: currentUser == messageSender,
                       //time: time,
                     );
@@ -295,10 +297,12 @@ class messagebuble extends StatelessWidget {
   messagebuble({
     required this.postlink,
     required this.msender,
+    required this.cptt,
     // required this.isme,
   });
   final String msender;
   final String postlink;
+  final String cptt;
 //  final bool isme;
   //final String time;
 
