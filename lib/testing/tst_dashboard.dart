@@ -53,6 +53,20 @@ class tst_dashboard extends StatelessWidget {
                     Spacer(),
                   ],
                 ),
+                Row(
+                  children: [
+                    Spacer(),
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tst_wall()),
+                          );
+                        },
+                        child: Text('New wall')),
+                    Spacer(),
+                  ],
+                ),
                 Spacer(),
               ],
             )),
