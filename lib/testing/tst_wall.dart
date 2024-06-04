@@ -311,13 +311,20 @@ class messagebuble extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(10.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             msender,
             style: TextStyle(
-              fontSize: 11.0,
-              color: Colors.black54,
+              fontSize: 18.0,
+              color: Colors.black,
+            ),
+          ),
+          Text(
+            cptt,
+            style: TextStyle(
+              fontSize: 18.0,
+              color: Colors.black,
             ),
           ),
           Material(
