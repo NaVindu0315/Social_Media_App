@@ -316,14 +316,15 @@ class messagebuble extends StatelessWidget {
           Text(
             msender,
             style: TextStyle(
-              fontSize: 18.0,
+              fontSize: 10.0,
               color: Colors.black,
             ),
           ),
           Text(
             cptt,
             style: TextStyle(
-              fontSize: 18.0,
+              fontSize: 25.0,
+              fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
           ),
