@@ -344,6 +344,16 @@ class messagebuble extends StatelessWidget {
               ),
             ),
           ),
+          Row(
+            children: [
+              IconButton(
+                icon: Icon(Icons.thumb_up),
+                onPressed: () {
+                  // Add your button press logic here
+                },
+              ),
+            ],
+          )
         ],
       ),
     );
