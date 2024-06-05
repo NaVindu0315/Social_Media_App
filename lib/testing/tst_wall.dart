@@ -358,6 +358,12 @@ class messagebuble extends StatelessWidget {
                   // Add your button press logic here
                 },
               ),
+              IconButton(
+                icon: Icon(Icons.share),
+                onPressed: () {
+                  // Add your button press logic here
+                },
+              ),
             ],
           )
         ],
